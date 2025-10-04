@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Techie Girl</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
@@ -30,6 +31,10 @@
       text-decoration: none;
       color: #2575fc;
       font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #6a11cb;
     }
     .hero {
       text-align: center;
@@ -53,12 +58,16 @@
       border-radius: 5px;
       font-size: 1rem;
       cursor: pointer;
+      transition: background-color 0.3s;
     }
-    .featured {
+    .cta-button:hover {
+      background-color: #6a11cb;
+    }
+    .featured, .blog-preview {
       padding: 2rem;
       background-color: #fff;
     }
-    .featured h2 {
+    .featured h2, .blog-preview h2 {
       text-align: center;
       margin-bottom: 2rem;
     }
@@ -83,6 +92,24 @@
       border-radius: 4px;
       font-weight: bold;
       cursor: pointer;
+    }
+    footer {
+      background-color: #f1f1f1;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .social-icons {
+      margin-top: 1rem;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      color: #2575fc;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #6a11cb;
     }
   </style>
 </head>
@@ -112,12 +139,11 @@
     <p style="text-align:center;">Coming soon: Interviews, tutorials, and tech reviews curated for you.</p>
   </section>
 
-  <section class="newsletter">
-    <h2>Join Our Newsletter</h2>
-    <p>Get weekly tech tips and career advice straight to your inbox.</p>
-    <input type="email" placeholder="Your email" />
-    <button>Subscribe</button>
+  <section class="blog-preview">
+    <h2>Latest Blog Posts</h2>
+    <ul style="list-style:none; padding:0; text-align:center;">
+      <li><strong>How to Start Coding as a Beginner</strong> – A guide to your first lines of code.</li>
+      <li><strong>Top 5 Women in Tech to Follow</strong> – Inspiration from industry leaders.</li>
+      <li><strong>Building Your First Portfolio Website</strong> – Tips to showcase your skills.</li>
+    </ul>
   </section>
-
-</body>
-</html>
