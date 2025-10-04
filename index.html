@@ -1,26 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Advanced Blog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Techie Girl</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f9f9fb;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #fff;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      text-decoration: none;
+      color: #2575fc;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .cta-button {
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #2575fc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .featured {
+      padding: 2rem;
+      background-color: #fff;
+    }
+    .featured h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .newsletter {
+      background-color: #6a11cb;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    .newsletter input {
+      padding: 0.5rem;
+      width: 250px;
+      margin-right: 1rem;
+      border: none;
+      border-radius: 4px;
+    }
+    .newsletter button {
+      padding: 0.5rem 1rem;
+      background-color: white;
+      color: #6a11cb;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1 id="site-title">My Advanced Blog</h1>
-        <nav>
-            <button id="home-btn">Home</button>
-            <button id="dark-mode-toggle">🌙</button>
-        </nav>
-    </header>
-    <main id="content">
-        <!-- Blog posts will be rendered here -->
-    </main>
-    <footer>
-        <p>&copy; 2025 My Blog. Powered by HTML, JS, Markdown.</p>
-    </footer>
-    <script src="libs/marked.min.js"></script>
-    <script src="main.js"></script>
+
+  <header>
+    <h1>The Techie Girl</h1>
+    <p>Empowering Women in Tech, One Byte at a Time</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Blog</a>
+    <a href="#">Learn</a>
+    <a href="#">Career</a>
+    <a href="#">Community</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to The Techie Girl</h1>
+    <p>Your go-to hub for tutorials, career tips, and stories that inspire women to thrive in tech.</p>
+    <button class="cta-button">Explore Articles</button>
+  </section>
+
+  <section class="featured">
+    <h2>Featured Content</h2>
+    <p style="text-align:center;">Coming soon: Interviews, tutorials, and tech reviews curated for you.</p>
+  </section>
+
+  <section class="newsletter">
+    <h2>Join Our Newsletter</h2>
+    <p>Get weekly tech tips and career advice straight to your inbox.</p>
+    <input type="email" placeholder="Your email" />
+    <button>Subscribe</button>
+  </section>
+
 </body>
 </html>
